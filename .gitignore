@@ -7,6 +7,9 @@
 node_modules/
 dist/
 
+# keys files
+claves.txt
+
 # Compiled Java class files
 *.class
 
