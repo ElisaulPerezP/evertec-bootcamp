@@ -1,4 +1,5 @@
 <?php
+
 return[
     'show' => 'Show user',
     'update' => 'Udate user',

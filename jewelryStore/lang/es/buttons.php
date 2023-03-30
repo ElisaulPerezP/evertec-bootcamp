@@ -1,4 +1,5 @@
 <?php
+
 return[
     'show' => 'Ver',
     'update' => 'Actualizar',
