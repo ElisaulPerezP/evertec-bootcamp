@@ -22,5 +22,6 @@ class UserControllerTest extends TestCase
         $response->assertOk();
         $response->assertViewIs('users.index');
         $response->assertViewHas('users');
+        $this->assertDatabaseCount('users', 101);
     }
 }
