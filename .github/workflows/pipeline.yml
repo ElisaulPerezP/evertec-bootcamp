@@ -29,6 +29,6 @@ jobs:
         env:
           DB_CONNECTION: sqlite
           DB_DATABASE: database/database.sqlite
-        run: composer test-ci
+        run: composer test-continuous-integration
       - name: Execute php-cs-fixer
         run: composer php-cs-fixer-validate
