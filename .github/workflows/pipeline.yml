@@ -13,8 +13,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        run: npm run dev
+        with:
+          node-version: ${{ matrix.node }}
+      - run: npm ci
       - name: Copy .env
         run: php -r "file_exists('.env') || copy('.env.example', '.env');"
       - name: Install Dependencies
